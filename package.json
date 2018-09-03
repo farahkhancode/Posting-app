@@ -1,0 +1,19 @@
+{
+  "name": "posting-app",
+  "version": "1.0.0",
+  "description": "Post and comment in this app",
+  "main": "index.js",
+  "scripts": {
+    "test": "export NODE_ENV=test && jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/farahkhancode/Posting-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/farahkhancode/Posting-app/issues"
+  },
+  "homepage": "https://github.com/farahkhancode/Posting-app#readme"
+}
