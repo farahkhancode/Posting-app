@@ -7,7 +7,7 @@ const postController = require("../controllers/postController")
 router.get("/posts", postController.index);
 router.get("/posts/new", postController.new);
 
-router.post("/posts/create", validation.validatePosts, helper.ensureAuthenticated, postController.create);
+router.post("/posts/create", helper.ensureAuthenticated, postController.create);
 router.get("/posts/:id", postController.show);
 
 router.post("/posts/:id/destroy", postController.destroy);

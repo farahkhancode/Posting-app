@@ -1,7 +1,7 @@
 const userQueries = require("../db/queries.users.js");
 const passport = require("passport");
 const session = require("express-session");
-const flash = require("express-flash")
+const flash = require("express-flash");
 
 module.exports = {
   signUp(req, res, nex){

@@ -20,7 +20,8 @@ module.exports = {
  create(req, res, next){
      let newPost= {
        title: req.body.title,
-       body: req.body.body
+       body: req.body.body,
+       userId: req.user.id
      };
      postQueries.addPost(newPost, (err, post) => {
         console.log(err);
