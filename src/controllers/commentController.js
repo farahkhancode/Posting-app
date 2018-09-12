@@ -9,7 +9,7 @@ module.exports = {
       let newComment = {
         body: req.body.body,
         userId: req.user.id,
-        postId: req.params.postId
+        postId: req.params.id
       };
 
  // #4
@@ -20,10 +20,12 @@ module.exports = {
           req.flash("error", err);
           res.redirect(req.headers.referer);
           } else {
-            res.redirect(303, `/posts/${post.id}`);
+            res.redirect(303, `/posts/${req.params.id}`);
             }
       });
   },
+
+
 
 // #6
   destroy(req, res, next){
